@@ -51,5 +51,6 @@ public class Gaulois {
 		System.out.println(asterix.prendreParole());
 		asterix.parler("je suis Astérix");
 		System.out.println(asterix);
+		asterix.boirePotion(3);
 	}
 }
