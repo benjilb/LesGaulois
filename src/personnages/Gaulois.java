@@ -31,12 +31,7 @@ public class Gaulois {
 	
 	public void boirePotion(int forcePotion) {
 		effetPotion = forcePotion;
-		if(effetPotion==3) {
-			parler("Merci Druide, je sens que ma force est 3 fois décuplée.");
-			
-		}
-		
-		
+		parler("Merci Druide, je sens que ma force est " + effetPotion  + " fois decuplee.");
 	}
 	
 	
@@ -49,8 +44,8 @@ public class Gaulois {
 		Gaulois asterix = new Gaulois("Asterix", 8);
 		System.out.println(asterix.getNom());
 		System.out.println(asterix.prendreParole());
-		asterix.parler("je suis Astérix");
+		asterix.parler("je suis Asterix");
 		System.out.println(asterix);
-		asterix.boirePotion(3);
+		asterix.boirePotion(4);
 	}
 }
