@@ -10,9 +10,9 @@ public enum Equipement {
 	@Override
 	public String toString() {
 		if (nom == "casque") {
-			return "Equipement [Casque=" + Casque.nom + "]";
+			return "Equipement " + Casque.nom ;
 		}else {
-			return "Equipement [Bouclier=" + Bouclier.nom + "]";
+			return "Equipement " + Bouclier.nom;
 		}
 //		return "Equipement [Casque=" + Equipement.Casque + ", Bouclier=" + Equipement.Bouclier + "]";
 	}

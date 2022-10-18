@@ -12,6 +12,7 @@ public class Romain {
 		this.nom = nom;
 		this.force = force;
 		this.equipements = new Equipement[nbEquipementMax];
+		assert force >=0;
 	}
 
 
@@ -48,12 +49,13 @@ public class Romain {
 		case 1: {
 			if (equipements[0] == equipement ) {
 				System.out.println("Le soldat " + nom + " possede deja un " + equipements[0] + " !" );
-				break;
+				
 			} else {
 				equipements[1] = equipement;
 				nbEquipement++;
 				System.out.println("Le soldat " + nom + " s'equipe avec un " + equipements[1] + " .");
 			}
+			break;
 		}
 		default : {
 			equipements[0] = equipement;
@@ -64,7 +66,7 @@ public class Romain {
 	} 
 	
 	public static void main(String[] args) {
-		Romain minus = new Romain("Minus", -6);
+		Romain minus = new Romain("Minus", 6);
 //		System.out.println(minus.prendreParole());
 //		minus.parler("bonjour");
 //		minus.recevoirCoup(4);
