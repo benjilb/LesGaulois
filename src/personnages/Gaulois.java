@@ -35,7 +35,7 @@ public class Gaulois {
 //		romain.recevoirCoup(force/3 * effetPotion);
 //	}
 	public void frapper(Romain romain) {
-		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
+		System.out.println(nom + " envoie un grand coup dans la machoire de " + romain.getNom());
 		Equipement[] newtrophees = romain.recevoirCoup((force / 3) * effetPotion);
 		for (int i = 0; newtrophees != null && i < newtrophees.length; i++, nb_trophees++) {
 			this.trophees[nb_trophees] = newtrophees[i];
